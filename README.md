@@ -71,3 +71,41 @@ A comprehensive exploration of **Constructors and Methods** designed to make you
 
 
 
+# 🐍 Python OOP Advanced Concepts - Day 03
+
+A comprehensive deep-dive into **Nested Classes, Inheritance & Method Patterns** designed for **production-ready** Python development.
+
+## 🎓 Topics Covered
+
+### 1. Nested Classes
+* **Logical Grouping**: Encapsulating helper classes within parent classes (Address in User, Department in University).
+* **Namespace Management**: Cleaner code organization using hierarchical class structures.
+* **Real-World Application**: Address inside User, Config inside Service, Response models inside APIs.
+
+### 2. Instance Methods
+* **State Management**: Methods that modify object-specific data (add_money, spend_money in Wallet).
+* **Business Logic**: Core functionality tied to individual object instances.
+* **Encapsulation**: Protecting internal state while exposing controlled interfaces.
+
+### 3. Class Methods (@classmethod)
+* **Factory Patterns**: Creating objects and managing class-level configuration (set_environment).
+* **Shared State**: Modifying data accessible across all instances (Logger level, User count).
+* **Global Configuration**: Setting application-wide parameters without instance creation.
+
+### 4. Static Methods (@staticmethod)
+* **Utility Functions**: Validation logic independent of instance/class state (validate_email, length_checker).
+* **Helper Operations**: Phone number validation, email verification, and credential checking.
+* **Organizational Practice**: Grouping related functionality within domain classes.
+
+### 5. Inheritance & Polymorphism
+* **Code Reuse**: Child classes inherit parent behavior (Admin, Customer from User).
+* **Method Overriding**: Custom implementations in child classes (send() in EmailNotification).
+* **super() Usage**: Proper constructor chaining and parent method access.
+
+### 6. Company-Level Design Patterns
+* **User System Architecture**: Base User class with Admin/Customer specialization.
+* **Composition Over Inheritance**: Nested Address class for flexible data modeling.
+* **Multi-Method Types**: Combining instance, class, and static methods in production systems.
+
+
+
