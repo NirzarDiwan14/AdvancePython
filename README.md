@@ -9,6 +9,12 @@
 | [Day 06](#-python-error-handling-logging--synchronization---day-06) | Error Handling | Exceptions, Logging, Thread Synchronization |
 | [Day 07–08](#-python-advanced-patterns---day-07--day-08) | Decorators & ABC | Decorators, Abstract Base Classes |
 | [Day 09](#-python-oop--database-integration---day-09) | OOP + Database | SQLite Integration, CRUD Operations |
+| [Mini PoC](#file-organizer-mini-python-poc) | File Organizer | OOP-based automated file organization using `pathlib` & logging |
+
+
+
+
+
 
 # 🐍 Python OOP Learning Journey - Day 01
 
@@ -295,3 +301,31 @@ A comprehensive exploration of **Object-Oriented Programming with SQLite Databas
 @property
 def email(self):
     return f'{self.first}.{self.last}@email.com'
+```
+
+
+
+# File Organizer Mini Python PoC
+
+
+
+## Overview
+This is a small Proof of Concept (PoC) demonstrating how **Object-Oriented Programming (OOP)** in Python can be used to automatically organize unstructured files in a directory.
+
+The program scans a target folder, classifies files based on their extensions, and moves them into well-structured category folders while logging all operations.
+
+## Features
+- Scans a directory for files
+- Classifies files (PDF, Images, Videos, Code, Documents, Others)
+- Creates folders dynamically
+- Moves files safely using `pathlib`
+- Logs successful operations and errors
+
+## Design Highlights
+- Clean OOP design following **Single Responsibility Principle**
+- Separate classes for file handling, classification, organization, and logging
+- Uses only standard Python libraries (`pathlib`, `logging`, `os`)
+
+## How to Run
+```bash
+python3 main.py
