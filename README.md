@@ -179,5 +179,55 @@ A comprehensive deep-dive into **Exception Handling, Logging Strategies & Thread
 * **Stop Flags**: Implementing graceful shutdown patterns with event.is_set() for worker threads.
 
 
+# 🐍 Python Advanced Patterns - Day 07 & Day 08
 
+A comprehensive exploration of **Decorators & Abstract Base Classes (ABC)** designed for **production-ready** Python development.
 
+## 🎓 Topics Covered
+
+### 1. Decorators Fundamentals
+* **Function Wrapping**: Adding behavior without modifying the original function.
+* **Decorator Syntax**: Using `@decorator` for clean code application.
+* **Metadata Preservation**: Using `functools.wraps` to maintain function metadata.
+* **Common Patterns**: Timer, Logger, Authentication, and Validation decorators.
+
+### 2. Decorator Stacking & Order
+* **Multiple Decorators**: Applying multiple decorators to a single function.
+* **Execution Order**: Outermost decorator executes first in chain.
+* **Real-World Flow**: Auth → Validation → Logging → Timing.
+
+### 3. Abstract Base Classes (ABC)
+* **Contract Definition**: Using ABC to define interfaces child classes MUST implement.
+* **Abstract Methods**: Enforcing implementation with `@abstractmethod`.
+* **Polymorphism**: Creating flexible class hierarchies with guaranteed methods.
+* **Common Patterns**: Shape hierarchy, Payment processors, Database adapters.
+
+## 🛠 Practical Projects Completed
+
+### Day 7: Decorators
+* **Multi-Decorator System**: Timer, Logger, and Authentication decorators with proper stacking.
+
+### Day 8: ABC Implementation
+* **Shape Hierarchy**: Abstract Shape class with Rectangle and Circle implementations.
+
+## 💡 Key Concepts
+
+### Decorator Execution Flow
+```
+Order: @auth @validate @log @timer
+Execution: auth → validate → log → timer → function
+```
+
+### ABC Pattern
+```
+1. Define abstract class with @abstractmethod
+2. Child classes implement ALL abstract methods
+3. Cannot instantiate abstract class directly
+4. Instantiate concrete child classes only
+```
+
+### Best Practices
+- Use `@functools.wraps` to preserve metadata
+- Stack decorators: Auth → Validation → Logging → Timing
+- Use `*args, **kwargs` for flexible signatures
+- Define clear ABC contracts with meaningful method names
