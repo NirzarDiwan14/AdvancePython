@@ -231,3 +231,55 @@ Execution: auth → validate → log → timer → function
 - Stack decorators: Auth → Validation → Logging → Timing
 - Use `*args, **kwargs` for flexible signatures
 - Define clear ABC contracts with meaningful method names
+
+
+
+# 🐍 Python OOP & Database Integration - Day 09
+
+A comprehensive exploration of **Object-Oriented Programming with SQLite Database Integration** designed for **real-world data persistence** and employee management systems.
+
+## 🎓 Topics Covered
+
+### 1. Employee Class Design
+* **Constructor (__init__)**: Initializing employee attributes (first name, last name, pay).
+* **Property Decorators (@property)**: Creating computed properties for email and fullname without setter methods.
+* **String Representation (__repr__)**: Implementing meaningful object representation for debugging.
+* **Encapsulation**: Bundling employee data with behavior in a single class.
+
+### 2. SQLite Database Fundamentals
+* **Database Connection**: Establishing connections using `sqlite3.connect()` for persistent data storage.
+* **Cursor Object**: Using cursor to execute SQL commands and fetch results.
+* **Context Manager (with statement)**: Automatic commit/rollback for database transactions.
+* **Table Creation**: Defining schema with appropriate data types (TEXT, INTEGER).
+
+### 3. CRUD Operations
+* **Create (INSERT)**: Adding new employee records to the database with parameterized queries.
+* **Read (SELECT)**: Fetching all employees or filtering by specific criteria (last name).
+* **Update (UPDATE)**: Modifying employee salary with conditional WHERE clauses.
+* **Delete (DELETE)**: Removing employee records from the database.
+
+### 4. Database Best Practices
+* **Parameterized Queries**: Using `:parameter` syntax to prevent SQL injection attacks.
+* **Connection Management**: Properly closing database connections after operations.
+* **Error Handling**: Using context managers to ensure data integrity and automatic rollback on errors.
+* **Data Validation**: Ensuring employee objects have valid data before database operations.
+
+## 🛠 Practical Projects Completed
+
+### Employee Management Database System
+* **Employee Class**: Complete OOP implementation with properties and string representation.
+* **Database CRUD**: Full suite of create, read, update, and delete operations.
+* **Query Functions**:
+  * `show_all()` - Retrieve all employees from database
+  * `insert_emp(emp)` - Add new employee record
+  * `get_emp_by_name(lastname)` - Search employees by last name
+  * `update_pay(emp, pay)` - Modify employee salary
+  * `remove_emp(emp)` - Delete employee from database
+
+## 💡 Key Concepts
+
+### Property Decorator Pattern
+```python
+@property
+def email(self):
+    return f'{self.first}.{self.last}@email.com'
