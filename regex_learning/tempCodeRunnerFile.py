@@ -1,0 +1,2 @@
+
+matches = pattern.search(sentence)

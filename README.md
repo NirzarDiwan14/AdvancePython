@@ -1,3 +1,15 @@
+## 📌 Quick Navigation – Python Learning Journey
+
+| Day | Topic | Description |
+|----|------|------------|
+| [Day 01](#-python-oop-learning-journey---day-01) | OOP Basics | Classes, Objects, Constructors, Encapsulation, Inheritance |
+| [Day 02](#-python-oop-learning-journey---day-02) | Constructors & Methods | Constructors, Class Methods, Static Methods, Getters & Setters |
+| [Day 03](#-python-oop-advanced-concepts---day-03) | Advanced OOP | Nested Classes, Inheritance, Polymorphism |
+| [Day 04–05](#-python-concurrency--parallelism---day-04-and-day-05) | Concurrency | Multithreading, Multiprocessing|
+| [Day 06](#-python-error-handling-logging--synchronization---day-06) | Error Handling | Exceptions, Logging, Thread Synchronization |
+| [Day 07–08](#-python-advanced-patterns---day-07--day-08) | Decorators & ABC | Decorators, Abstract Base Classes |
+| [Day 09](#-python-oop--database-integration---day-09) | OOP + Database | SQLite Integration, CRUD Operations |
+
 # 🐍 Python OOP Learning Journey - Day 01
 
 A comprehensive overview of the Object-Oriented Programming concepts covered today, ranging from basic class structure to advanced management systems.
